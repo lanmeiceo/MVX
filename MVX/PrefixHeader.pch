@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  MVX
+//
+//  Created by caowei on 2020/5/2.
+//  Copyright © 2020 caowei. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//屏幕
+#define ScreenBounds [UIScreen mainScreen].bounds
+#define ScreenWidth ScreenBounds.size.width
+#define ScreenHeight ScreenBounds.size.height
+#import "UIView+frame.h"
+#import "UITableViewCell+CreatCell.h"
+
+#import <Masonry.h>
+#import <ReactiveObjC/ReactiveObjC.h>
+
+#define WEAKSELF __weak __typeof(self)weakSelf = self;
+
+
+#endif /* PrefixHeader_pch */
