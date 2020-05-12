@@ -246,10 +246,10 @@ CGFloat FitHeightIn568(CGFloat value){
     self.layer.masksToBounds = YES;
     self.layer.cornerRadius = cornerRadius;
     self.layer.borderWidth = width;
-    if (!color) {
-        self.layer.borderColor = kLineColor.CGColor;
-    }else{
+//    if (!color) {
+//        self.layer.borderColor = kLineColor.CGColor;
+//    }else{
         self.layer.borderColor = color.CGColor;
-    }
+//    }
 }
 @end

@@ -18,6 +18,7 @@
 
 #import <Masonry.h>
 #import <ReactiveObjC/ReactiveObjC.h>
+#import "FBKVOController.h"
 
 #define WEAKSELF __weak __typeof(self)weakSelf = self;
 

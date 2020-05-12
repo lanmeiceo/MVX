@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5D6A36BF3F995BDC50A15D85 /* libPods-MVX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515383CD9D64921BE802B463 /* libPods-MVX.a */; };
+		610E1E5C246ACFBA00D201BC /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610E1E59246ACFB900D201BC /* NSObject+FBKVOController.m */; };
+		610E1E5D246ACFBA00D201BC /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610E1E5A246ACFB900D201BC /* FBKVOController.m */; };
+		610E1E66246AD04400D201BC /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 610E1E61246AD04400D201BC /* UIView+frame.m */; };
 		617F2CA6245D8BC700C39E2A /* CWMVCTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 617F2CA5245D8BC700C39E2A /* CWMVCTableView.m */; };
 		617F2D9F245EF50800C39E2A /* CWMVCUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 617F2D9E245EF50800C39E2A /* CWMVCUserCell.m */; };
 		617F2DA2245EF54B00C39E2A /* UITableViewCell+CreatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 617F2DA1245EF54B00C39E2A /* UITableViewCell+CreatCell.m */; };
@@ -52,6 +55,13 @@
 /* Begin PBXFileReference section */
 		3ED9D6808298C2CF6BC584C9 /* Pods-MVX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVX.release.xcconfig"; path = "Target Support Files/Pods-MVX/Pods-MVX.release.xcconfig"; sourceTree = "<group>"; };
 		515383CD9D64921BE802B463 /* libPods-MVX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		610E1E57246ACFB900D201BC /* KVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOController.h; sourceTree = "<group>"; };
+		610E1E58246ACFB900D201BC /* FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBKVOController.h; sourceTree = "<group>"; };
+		610E1E59246ACFB900D201BC /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FBKVOController.m"; sourceTree = "<group>"; };
+		610E1E5A246ACFB900D201BC /* FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBKVOController.m; sourceTree = "<group>"; };
+		610E1E5B246ACFB900D201BC /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FBKVOController.h"; sourceTree = "<group>"; };
+		610E1E61246AD04400D201BC /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		610E1E62246AD04400D201BC /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
 		617F2CA4245D8BC700C39E2A /* CWMVCTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWMVCTableView.h; sourceTree = "<group>"; };
 		617F2CA5245D8BC700C39E2A /* CWMVCTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWMVCTableView.m; sourceTree = "<group>"; };
 		617F2D9D245EF50800C39E2A /* CWMVCUserCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWMVCUserCell.h; sourceTree = "<group>"; };
@@ -96,8 +106,6 @@
 		61DEABB1245D62C700BF0D2B /* CWMVVMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWMVVMViewController.h; sourceTree = "<group>"; };
 		61DEABB2245D62C700BF0D2B /* CWMVVMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWMVVMViewController.m; sourceTree = "<group>"; };
 		61DEABB4245D657A00BF0D2B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		61DEABB9245D663A00BF0D2B /* UIView+frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIView+frame.h"; path = "../../../../Documents/DM/QG/QGChatRoom/Public/Category/UIView+frame.h"; sourceTree = "<group>"; };
-		61DEABBB245D663A00BF0D2B /* UIView+frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIView+frame.m"; path = "../../../../Documents/DM/QG/QGChatRoom/Public/Category/UIView+frame.m"; sourceTree = "<group>"; };
 		61DEABBC245D72B600BF0D2B /* CWHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWHomeViewController.h; sourceTree = "<group>"; };
 		61DEABBD245D72B600BF0D2B /* CWHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWHomeViewController.m; sourceTree = "<group>"; };
 		8B1A9027FA179A6A5E4248D4 /* Pods-MVX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVX.debug.xcconfig"; path = "Target Support Files/Pods-MVX/Pods-MVX.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +143,18 @@
 				515383CD9D64921BE802B463 /* libPods-MVX.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		610E1E56246ACFB900D201BC /* FBKVOController */ = {
+			isa = PBXGroup;
+			children = (
+				610E1E57246ACFB900D201BC /* KVOController.h */,
+				610E1E58246ACFB900D201BC /* FBKVOController.h */,
+				610E1E5A246ACFB900D201BC /* FBKVOController.m */,
+				610E1E5B246ACFB900D201BC /* NSObject+FBKVOController.h */,
+				610E1E59246ACFB900D201BC /* NSObject+FBKVOController.m */,
+			);
+			path = FBKVOController;
 			sourceTree = "<group>";
 		};
 		61DEAA63245D551E00BF0D2B = {
@@ -230,6 +250,7 @@
 		61DEAAA7245D559200BF0D2B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				610E1E56246ACFB900D201BC /* FBKVOController */,
 				61DEABB5245D661E00BF0D2B /* Category */,
 			);
 			path = Common;
@@ -329,8 +350,8 @@
 		61DEABB5245D661E00BF0D2B /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				61DEABB9245D663A00BF0D2B /* UIView+frame.h */,
-				61DEABBB245D663A00BF0D2B /* UIView+frame.m */,
+				610E1E62246AD04400D201BC /* UIView+frame.h */,
+				610E1E61246AD04400D201BC /* UIView+frame.m */,
 				617F2DA0245EF54B00C39E2A /* UITableViewCell+CreatCell.h */,
 				617F2DA1245EF54B00C39E2A /* UITableViewCell+CreatCell.m */,
 			);
@@ -506,10 +527,12 @@
 				61DEAA71245D551E00BF0D2B /* AppDelegate.m in Sources */,
 				617F2FA6245FF92700C39E2A /* CWMVVMTableView.m in Sources */,
 				61DEABAD245D628700BF0D2B /* CWMVPViewController.m in Sources */,
+				610E1E5D246ACFBA00D201BC /* FBKVOController.m in Sources */,
 				61DEAA82245D552100BF0D2B /* main.m in Sources */,
 				61DEABA4245D61B000BF0D2B /* CWMVCViewController.m in Sources */,
 				617F2FA3245FF90500C39E2A /* CWUserCellViewModel.m in Sources */,
 				617F2F94245FC60E00C39E2A /* CWMVPTableView.m in Sources */,
+				610E1E5C246ACFBA00D201BC /* NSObject+FBKVOController.m in Sources */,
 				617F2F9D245FC80D00C39E2A /* CWMVPUserCell.m in Sources */,
 				617F2F9A245FC74F00C39E2A /* CWUserCellPresenter.m in Sources */,
 				617F2F97245FC73100C39E2A /* CWTableViewPresenter.m in Sources */,
@@ -519,6 +542,7 @@
 				617F2FA9245FF94A00C39E2A /* CWMVVMUserCell.m in Sources */,
 				61DEABBE245D72B600BF0D2B /* CWHomeViewController.m in Sources */,
 				617F2FA0245FF8C100C39E2A /* CWUserViewModel.m in Sources */,
+				610E1E66246AD04400D201BC /* UIView+frame.m in Sources */,
 				617F2CA6245D8BC700C39E2A /* CWMVCTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
