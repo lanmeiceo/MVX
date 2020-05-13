@@ -46,7 +46,7 @@
 #pragma mark - notification
 
 #pragma mark - event response
-
+//处理View中的事件
 - (void)dealCommand {
     WEAKSELF
     self.supportCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {

@@ -12,6 +12,8 @@
 
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UIButton *supportButton;
+//KVO
+@property (nonatomic, strong) FBKVOController *KVOController;
 
 @end
 
@@ -23,7 +25,8 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self setupUI];
         [self autoLayout];
-        [self bindViewModel];
+//        [self bindViewModel_RAC];
+        [self bindViewModel_KVO];
     }
     return self;
 }
@@ -54,13 +57,36 @@
 
 #pragma mark - private
 
-//View绑定ViewModel
-- (void)bindViewModel {
+//View绑定ViewModel-RAC写法
+- (void)bindViewModel_RAC {
+    WEAKSELF
+    //RAC写法
     RAC(self.titleLabel,text) = RACObserve(self, self.viewModel.titltLableText);
     RAC(self.supportButton,selected) = [RACObserve(self, self.viewModel.isSupport) ignore:nil];//忽略nil否则会崩
-    WEAKSELF
     [RACObserve(self,self.viewModel.buttonTitle) subscribeNext:^(NSString *title) {
         [weakSelf.supportButton setTitle:title forState:UIControlStateNormal];
+    }];
+        
+}
+
+//View绑定ViewModel-KVO写法
+- (void)bindViewModel_KVO {
+    WEAKSELF
+    self.KVOController = [FBKVOController controllerWithObserver:self];
+    [self.KVOController observe:self keyPath:@"viewModel.titltLableText" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSKeyValueChangeKey,id> * _Nonnull change) {
+        weakSelf.titleLabel.text =change[NSKeyValueChangeNewKey];
+    }];
+    
+    [self.KVOController observe:self keyPath:@"viewModel.isSupport" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSKeyValueChangeKey,id> * _Nonnull change) {
+        if ([change[NSKeyValueChangeNewKey] integerValue] == 1) {
+            weakSelf.supportButton.selected = YES;
+        } else {
+            weakSelf.supportButton.selected = NO;
+        }
+    }];
+    
+    [self.KVOController observe:self keyPath:@"viewModel.buttonTitle" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSKeyValueChangeKey,id> * _Nonnull change) {
+        [weakSelf.supportButton setTitle:change[NSKeyValueChangeNewKey] forState:UIControlStateNormal];
     }];
 }
 
