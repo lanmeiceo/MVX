@@ -15,6 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)viewModelWithModel:(CWUserModel *)model;
 
+//@property (nonatomic,copy) NSString *titltLableText;
+//@property (nonatomic,copy) NSString *buttonTitle;
+//@property (nonatomic,assign) BOOL isSupport;
+
 - (NSString *)titltLableText;
 - (NSString *)buttonTitle;
 - (BOOL)isSupport;

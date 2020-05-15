@@ -19,6 +19,7 @@
 
 @implementation CWMVVMUserCell
 
+
 #pragma mark - life cycle
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -27,6 +28,7 @@
         [self autoLayout];
 //        [self bindViewModel_RAC];
         [self bindViewModel_KVO];
+        
     }
     return self;
 }
@@ -74,7 +76,7 @@
     WEAKSELF
     self.KVOController = [FBKVOController controllerWithObserver:self];
     [self.KVOController observe:self keyPath:@"viewModel.titltLableText" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSKeyValueChangeKey,id> * _Nonnull change) {
-        weakSelf.titleLabel.text =change[NSKeyValueChangeNewKey];
+        weakSelf.titleLabel.text = change[NSKeyValueChangeNewKey];
     }];
     
     [self.KVOController observe:self keyPath:@"viewModel.isSupport" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSKeyValueChangeKey,id> * _Nonnull change) {

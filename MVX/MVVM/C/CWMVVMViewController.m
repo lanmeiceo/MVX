@@ -29,6 +29,7 @@
 }
 
 #pragma mark - private UI
+
 - (void)setupUI {
     [self.view addSubview:self.tableView];
 }
@@ -46,6 +47,7 @@
 #pragma mark - private
 
 #pragma mark - request
+
 //模拟请求数据
 - (void)requestData {
     [[self.tableView.requestDataCommand execute:nil]subscribeError:^(NSError * _Nullable error) {
@@ -63,6 +65,7 @@
 #pragma mark - event response
 
 #pragma mark - getter and setter
+
 - (CWMVVMTableView *)tableView {
     if (!_tableView) {
         _tableView = [[CWMVVMTableView alloc] init];

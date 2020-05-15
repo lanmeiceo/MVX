@@ -34,10 +34,17 @@
 - (instancetype)initWithModel:(CWUserModel *)model {
     if (self = [super init]) {
         self.model = model;
+//        [self bindModel:model];
         [self dealCommand];
     }
     return self;
 }
+
+//- (void)bindModel:(CWUserModel *)model {
+//    self.titltLableText = model.title;
+//    self.buttonTitle = [NSString stringWithFormat:@"支持数%ld",self.model.supportCount];
+//    self.isSupport = model.isSupport;
+//}
 
 #pragma mark - request
 
@@ -56,7 +63,11 @@
         } else {
             weakSelf.buttonTitle = weakSelf.model.supportCount - 1;
         }
+//        weakSelf.model.isSupport = !weakSelf.model.isSupport;
+//        weakSelf.model.isSupport ? weakSelf.model.supportCount ++ : weakSelf.model.supportCount --;
+//        [weakSelf bindModel:weakSelf.model];
         return  [RACSignal empty];
+
     }];
 }
 
