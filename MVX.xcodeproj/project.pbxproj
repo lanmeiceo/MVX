@@ -231,8 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				61DEABAA245D627700BF0D2B /* C */,
-				61DEABA9245D620F00BF0D2B /* P */,
 				61DEABA8245D61EB00BF0D2B /* V */,
+				61DEABA9245D620F00BF0D2B /* P */,
 			);
 			path = MVP;
 			sourceTree = "<group>";

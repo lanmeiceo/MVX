@@ -31,6 +31,9 @@
 
 #pragma mark - private UI
 - (void)setupUI {
+    if (@available(iOS 11.0, *)) {
+        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }
     [self addSubview:self.tableView];
 }
 - (void)autoLayout {
