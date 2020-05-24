@@ -77,47 +77,47 @@
 - (NSMutableArray *)localDataArray {
     if (!_localDataArray) {
         _localDataArray = @[@{@"title": @"标题1",
-                         @"isSupport": @"1",
-                         @"supportCount": @"10"
-                        },
-                       @{@"title": @"标题2",
-                         @"isSupport": @"0",
-                         @"supportCount": @"8"
-                        },
-                       @{@"title": @"标题3",
-                         @"isSupport": @"0",
-                         @"supportCount": @"9"
-                         },
-                       @{@"title": @"标题4",
-                         @"isSupport": @"0",
-                         @"supportCount": @"10"
-                         },
-                       @{@"title": @"标题5",
-                         @"isSupport": @"1",
-                         @"supportCount": @"10"
-                         },
-                       @{@"title": @"标题6",
-                         @"isSupport": @"1",
-                         @"supportCount": @"8"
-                         },
-                       @{@"title": @"标题7",
-                         @"isSupport": @"0",
-                         @"supportCount": @"9"
-                         },
-                       @{@"title": @"标题8",
-                         @"isSupport": @"0",
-                         @"supportCount": @"10"
-                         },
-                       @{@"title": @"标题9",
-                         @"isSupport": @"0",
-                         @"supportCount": @"9"
-                         },
-                       @{@"title": @"标题10",
-                         @"isSupport": @"0",
-                         @"supportCount": @"10"
-                         }
-                       ].mutableCopy;
+                            @"isSupport": @"1",
+                            @"supportCount": @"10"
+                            },
+                            @{@"title": @"标题2",
+                              @"isSupport": @"0",
+                              @"supportCount": @"8"
+                            },
+                            @{@"title": @"标题3",
+                              @"isSupport": @"0",
+                              @"supportCount": @"9"
+                            },
+                            @{@"title": @"标题4",
+                              @"isSupport": @"0",
+                              @"supportCount": @"10"
+                            },
+                            @{@"title": @"标题5",
+                              @"isSupport": @"1",
+                              @"supportCount": @"10"
+                            },
+                            @{@"title": @"标题6",
+                              @"isSupport": @"1",
+                              @"supportCount": @"8"
+                            },
+                            @{@"title": @"标题7",
+                              @"isSupport": @"0",
+                              @"supportCount": @"9"
+                            },
+                            @{@"title": @"标题8",
+                              @"isSupport": @"0",
+                              @"supportCount": @"10"
+                            },
+                            @{@"title": @"标题9",
+                              @"isSupport": @"0",
+                              @"supportCount": @"9"
+                            },
+                            @{@"title": @"标题10",
+                              @"isSupport": @"0",
+                              @"supportCount": @"10"
+                            }].mutableCopy;
     }
     return _localDataArray;
 }
+
 @end

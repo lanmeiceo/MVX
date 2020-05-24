@@ -101,8 +101,7 @@
                             @{@"title": @"标题10",
                               @"isSupport": @"0",
                               @"supportCount": @"10"
-                            }
-        ].mutableCopy;
+                            }].mutableCopy;
     }
     return _localDataArray;
 }
