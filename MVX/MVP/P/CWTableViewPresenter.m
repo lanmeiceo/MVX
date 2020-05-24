@@ -36,15 +36,12 @@
     //省略实际开发接口请求
     //接口请求成功后的回调
     [self.cellPresenterArray removeAllObjects];
-    NSMutableArray *array = @[].mutableCopy;
     for (NSDictionary *dic in self.localDataArray) {
         CWUserModel *model = [[CWUserModel alloc] initWithDic:dic];
-        [array addObject:model];
-    }
-    for (CWUserModel *model in array) {
         CWUserCellPresenter *cellPresenter = [CWUserCellPresenter presenterWithModel:model];
         [self.cellPresenterArray addObject:cellPresenter];
     }
+
     //V层刷新
     if (self.view && [self.view respondsToSelector:@selector(refreshTableView:)]) {
         [self.view refreshTableView:self];

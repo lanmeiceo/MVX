@@ -47,6 +47,7 @@
     } else {
         self.model.supportCount --;
     }
+    //刷新View
     if (self.view && [self.view respondsToSelector:@selector(reloadCellData:)]) {
         [self.view reloadCellData:self];
     }

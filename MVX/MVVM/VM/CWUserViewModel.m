@@ -49,12 +49,8 @@
 - (void)requestData {
     //省略实际开发接口请求
     //接口请求成功后的回调
-    NSMutableArray *array = @[].mutableCopy;
     for (NSDictionary *dic in self.localDataArray) {
         CWUserModel *model = [[CWUserModel alloc] initWithDic:dic];
-        [array addObject:model];
-    }
-    for (CWUserModel *model in array) {
         CWUserCellViewModel *cellViewModel = [CWUserCellViewModel viewModelWithModel:model];
         [self.cellViewModelArray addObject:cellViewModel];
     }

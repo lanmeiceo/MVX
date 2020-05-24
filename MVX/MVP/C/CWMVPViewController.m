@@ -28,7 +28,7 @@
     [self setupUI];
     [self autoLayout];
     //PV绑定
-    self.presenter.view = self.tableView;
+    self.presenter.view = (id)self.tableView;
     [self requestData];
 }
 
@@ -81,4 +81,5 @@
     }
     return _presenter;
 }
+
 @end

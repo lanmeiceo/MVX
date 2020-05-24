@@ -101,4 +101,11 @@
     return _tableView;
 }
 
+- (CWTableViewPresenter *)presenter {
+    if (!_presenter) {
+        _presenter = [[CWTableViewPresenter alloc] init];
+    }
+    return _presenter;
+}
+
 @end
