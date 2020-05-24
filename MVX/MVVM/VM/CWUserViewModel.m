@@ -24,7 +24,6 @@
 {
     self = [super init];
     if (self) {
-        self.cellViewModelArray = [NSMutableArray array];
         WEAKSELF
         self.requestSignal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
             //模拟请求
@@ -70,6 +69,13 @@
 
 - (NSArray<CWUserCellViewModel *> *)dataArray {
     return self.cellViewModelArray;
+}
+
+- (NSMutableArray<CWUserCellViewModel *> *)cellViewModelArray {
+    if (!_cellViewModelArray) {
+        _cellViewModelArray = [NSMutableArray array];
+    }
+    return _cellViewModelArray;
 }
 
 - (NSMutableArray *)localDataArray {

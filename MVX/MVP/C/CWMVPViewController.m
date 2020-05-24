@@ -25,9 +25,10 @@
     [super viewDidLoad];
     self.title = @"MVP";
     self.view.backgroundColor = [UIColor whiteColor];
-    self.presenter = [[CWTableViewPresenter alloc] init];
     [self setupUI];
     [self autoLayout];
+    //PV绑定
+    self.presenter.view = self.tableView;
     [self requestData];
 }
 
@@ -66,13 +67,18 @@
 #pragma mark - event response
 
 #pragma mark - getter and setter
+
 - (CWMVPTableView *)tableView {
     if (!_tableView) {
         _tableView = [[CWMVPTableView alloc] init];
-        //PV绑定
-        self.presenter.view = (id)_tableView;
     }
     return _tableView;
 }
 
+- (CWTableViewPresenter *)presenter {
+    if (!_presenter) {
+        _presenter = [[CWTableViewPresenter alloc] init];
+    }
+    return _presenter;
+}
 @end

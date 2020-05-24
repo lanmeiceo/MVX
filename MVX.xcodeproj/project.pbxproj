@@ -10,7 +10,6 @@
 		5D6A36BF3F995BDC50A15D85 /* libPods-MVX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515383CD9D64921BE802B463 /* libPods-MVX.a */; };
 		610E1E5C246ACFBA00D201BC /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610E1E59246ACFB900D201BC /* NSObject+FBKVOController.m */; };
 		610E1E5D246ACFBA00D201BC /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610E1E5A246ACFB900D201BC /* FBKVOController.m */; };
-		616BD92D246EBDE400E956A7 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 616BD92B246EBDE400E956A7 /* UIView+frame.m */; };
 		617F2CA6245D8BC700C39E2A /* CWMVCTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 617F2CA5245D8BC700C39E2A /* CWMVCTableView.m */; };
 		617F2D9F245EF50800C39E2A /* CWMVCUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 617F2D9E245EF50800C39E2A /* CWMVCUserCell.m */; };
 		617F2DA2245EF54B00C39E2A /* UITableViewCell+CreatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 617F2DA1245EF54B00C39E2A /* UITableViewCell+CreatCell.m */; };
@@ -23,6 +22,7 @@
 		617F2FA3245FF90500C39E2A /* CWUserCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 617F2FA2245FF90500C39E2A /* CWUserCellViewModel.m */; };
 		617F2FA6245FF92700C39E2A /* CWMVVMTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 617F2FA5245FF92700C39E2A /* CWMVVMTableView.m */; };
 		617F2FA9245FF94A00C39E2A /* CWMVVMUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 617F2FA8245FF94A00C39E2A /* CWMVVMUserCell.m */; };
+		61860255247A4DC700FF82A8 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 61860254247A4DC700FF82A8 /* UIView+frame.m */; };
 		61DEAA71245D551E00BF0D2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DEAA70245D551E00BF0D2B /* AppDelegate.m */; };
 		61DEAA7C245D552100BF0D2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61DEAA7B245D552100BF0D2B /* Assets.xcassets */; };
 		61DEAA7F245D552100BF0D2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61DEAA7D245D552100BF0D2B /* LaunchScreen.storyboard */; };
@@ -60,8 +60,6 @@
 		610E1E59246ACFB900D201BC /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FBKVOController.m"; sourceTree = "<group>"; };
 		610E1E5A246ACFB900D201BC /* FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBKVOController.m; sourceTree = "<group>"; };
 		610E1E5B246ACFB900D201BC /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FBKVOController.h"; sourceTree = "<group>"; };
-		616BD92B246EBDE400E956A7 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
-		616BD92C246EBDE400E956A7 /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
 		617F2CA4245D8BC700C39E2A /* CWMVCTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWMVCTableView.h; sourceTree = "<group>"; };
 		617F2CA5245D8BC700C39E2A /* CWMVCTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWMVCTableView.m; sourceTree = "<group>"; };
 		617F2D9D245EF50800C39E2A /* CWMVCUserCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWMVCUserCell.h; sourceTree = "<group>"; };
@@ -86,6 +84,8 @@
 		617F2FA5245FF92700C39E2A /* CWMVVMTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWMVVMTableView.m; sourceTree = "<group>"; };
 		617F2FA7245FF94A00C39E2A /* CWMVVMUserCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWMVVMUserCell.h; sourceTree = "<group>"; };
 		617F2FA8245FF94A00C39E2A /* CWMVVMUserCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWMVVMUserCell.m; sourceTree = "<group>"; };
+		61860253247A4DC700FF82A8 /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		61860254247A4DC700FF82A8 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
 		61DEAA6C245D551E00BF0D2B /* MVX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61DEAA6F245D551E00BF0D2B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		61DEAA70245D551E00BF0D2B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -350,8 +350,8 @@
 		61DEABB5245D661E00BF0D2B /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				616BD92C246EBDE400E956A7 /* UIView+frame.h */,
-				616BD92B246EBDE400E956A7 /* UIView+frame.m */,
+				61860253247A4DC700FF82A8 /* UIView+frame.h */,
+				61860254247A4DC700FF82A8 /* UIView+frame.m */,
 				617F2DA0245EF54B00C39E2A /* UITableViewCell+CreatCell.h */,
 				617F2DA1245EF54B00C39E2A /* UITableViewCell+CreatCell.m */,
 			);
@@ -541,7 +541,7 @@
 				617F2F91245EFC3800C39E2A /* CWUserModel.m in Sources */,
 				617F2FA9245FF94A00C39E2A /* CWMVVMUserCell.m in Sources */,
 				61DEABBE245D72B600BF0D2B /* CWHomeViewController.m in Sources */,
-				616BD92D246EBDE400E956A7 /* UIView+frame.m in Sources */,
+				61860255247A4DC700FF82A8 /* UIView+frame.m in Sources */,
 				617F2FA0245FF8C100C39E2A /* CWUserViewModel.m in Sources */,
 				617F2CA6245D8BC700C39E2A /* CWMVCTableView.m in Sources */,
 			);
