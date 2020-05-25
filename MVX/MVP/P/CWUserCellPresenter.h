@@ -11,9 +11,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @class CWUserCellPresenter;
+
 @protocol CWUserCellPresenterCallBack <NSObject>
 
 @optional
+
 - (void)reloadCellData:(CWUserCellPresenter *)cellPresenter;
 
 @end

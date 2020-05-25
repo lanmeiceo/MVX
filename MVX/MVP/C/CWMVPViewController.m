@@ -33,6 +33,7 @@
 }
 
 #pragma mark - private UI
+
 - (void)setupUI {
     if (@available(iOS 11.0, *)) {
     } else {
@@ -54,6 +55,7 @@
 #pragma mark - private
 
 #pragma mark - request
+
 //模拟请求数据
 - (void)requestData {
     //数据请求在P层
