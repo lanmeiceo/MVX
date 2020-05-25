@@ -55,6 +55,7 @@
         [self.cellViewModelArray addObject:cellViewModel];
     }
 }
+
 #pragma mark - delegate
 
 #pragma mark - notification

@@ -54,7 +54,7 @@
 
 //模拟请求数据
 - (void)requestData {
-    [[self.tableView.requestDataCommand execute:nil]subscribeError:^(NSError * _Nullable error) {
+    [[self.tableView.requestDataCommand execute:nil] subscribeError:^(NSError * _Nullable error) {
         
     } completed:^{
         
