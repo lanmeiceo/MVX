@@ -11,9 +11,11 @@
 #import "CWUserViewModel.h"
 
 @interface CWMVVMTableView ()<UITableViewDelegate,UITableViewDataSource>
-@property (nonatomic, strong) UITableView *tableView;
+
 @property (nonatomic, strong) CWUserViewModel *viewModel;
 @property (nonatomic, strong) RACCommand *requestDataCommand;
+@property (nonatomic, strong) UITableView *tableView;
+
 @end
 
 @implementation CWMVVMTableView
@@ -36,9 +38,6 @@
 #pragma mark - private UI
 
 - (void)setupUI {
-    if (@available(iOS 11.0, *)) {
-        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    }
     [self addSubview:self.tableView];
 }
 

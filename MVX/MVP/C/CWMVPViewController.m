@@ -35,10 +35,6 @@
 #pragma mark - private UI
 
 - (void)setupUI {
-    if (@available(iOS 11.0, *)) {
-    } else {
-        self.automaticallyAdjustsScrollViewInsets = NO;
-    }
     [self.view addSubview:self.tableView];
 }
 
