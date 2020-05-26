@@ -17,6 +17,7 @@
 @end
 
 @implementation CWMVCTableView
+
 #pragma mark - life cycle
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -48,6 +49,7 @@
 
 #pragma mark - delegate
 #pragma mark - UITableViewDataSource
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.dataArray.count;
 }
@@ -73,6 +75,7 @@
 }
 
 #pragma mark - UITableViewDelegate
+
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 64;
 }
@@ -82,6 +85,7 @@
 #pragma mark - event response
 
 #pragma mark - getter and setter
+
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];

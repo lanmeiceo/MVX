@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CWMVCUserCell : UITableViewCell
+
 //设置Label文字
 - (void)setTitle:(NSString*)title;
 //设置按钮文字

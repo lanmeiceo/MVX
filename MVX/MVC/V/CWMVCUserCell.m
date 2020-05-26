@@ -73,12 +73,12 @@
 #pragma mark - notification
 
 #pragma mark - event response
+
 - (void)supportClick {
     !self.supportClickBlock ?: self.supportClickBlock();
 }
 
 #pragma mark - getter and setter
-
 
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
