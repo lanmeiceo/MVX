@@ -68,7 +68,6 @@
     [RACObserve(self,self.viewModel.buttonTitle) subscribeNext:^(NSString *title) {
         [weakSelf.supportButton setTitle:title forState:UIControlStateNormal];
     }];
-        
 }
 
 //View绑定ViewModel-KVO写法

@@ -58,7 +58,6 @@
             weakSelf.buttonTitle = weakSelf.model.supportCount - 1;
         }
         return  [RACSignal empty];
-
     }];
 }
 
