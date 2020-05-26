@@ -15,6 +15,7 @@
 @property (nonatomic, strong) CWMVCTableView *tableView;
 //本地数据源
 @property (nonatomic, strong) NSMutableArray *localDataArray;
+
 @end
 
 @implementation CWMVCViewController
@@ -29,7 +30,9 @@
     [self requestData];
 }
 
+
 #pragma mark - private UI
+
 - (void)setupUI {
     [self.view addSubview:self.tableView];
 }
@@ -47,6 +50,7 @@
 #pragma mark - private
 
 #pragma mark - request
+
 //模拟请求数据
 - (void)requestData {
     //省略实际开发接口请求
